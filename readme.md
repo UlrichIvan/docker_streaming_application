@@ -28,7 +28,7 @@ Docker will be run three services :
 
 - backend service
 
-## 2.Show services with docker compose
+## 2. Show services with docker compose
 
 ```bash
    $ docker compose ps
