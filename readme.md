@@ -6,7 +6,9 @@
 
 - Docker installed in your computer
 
-## Run docker containers
+# Steps
+
+## 1. Run docker containers
 
 ```bash
    $ docker compose up -d
@@ -26,7 +28,7 @@ Docker will be run three services :
 
 - backend service
 
-## Show services with docker compose
+## 2.Show services with docker compose
 
 ```bash
    $ docker compose ps
@@ -34,9 +36,9 @@ Docker will be run three services :
 
 You can access to :<br>
 
-- Streamlit service with url : [http://localhost:8501](http://localhost:8501) (copy and paste this url on your browser)
+- Streamlit service with url : [http://localhost:8501](http://localhost:8501) (copy and paste this url on your browser after step 1)
 
-- Backend service with url: [http://0.0.0.0:4000](http://0.0.0.0:4000) (copy and paste this url on your browser)
+- Backend service with url: [http://0.0.0.0:4000](http://0.0.0.0:4000) (copy and paste this url on your browser after step 2)
 
 For more informations contact me on mtchokos@gmail.com.<br>
 Enjoy and have a best day,<br>
