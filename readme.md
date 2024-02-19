@@ -49,3 +49,34 @@ You can access to :<br>
 For more informations contact [me](mailto:mtchokos@gmail.com.)<br>
 Enjoy and have a best day,<br>
 Thanks.
+
+# for deployment
+
+go to the frontend folder and do theses steps:
+
+1. Create the virtual `environment` for your project using command below:
+
+   ```cmd
+      $ python -m venv .env
+   ```
+
+   if you use cli inside of vscode it will detect the creation of the virtual environment.
+   then accept the proposition on vscode on right bottom interface the click ok.
+
+2. Download all required packages with this command below:
+
+   ```cmd
+      $ pip -install -r requirements.txt
+   ```
+
+3. run application with this command below:
+
+   ```cmd
+      $streamlit run main.py
+   ```
+
+   if you have error use this command below for python3.12(use your python version to run script below):
+
+   ```cmd
+     $  python3.12 -m streamlit run main.py
+   ```
