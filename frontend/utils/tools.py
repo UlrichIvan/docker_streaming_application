@@ -1,3 +1,5 @@
+import os
+
 OPTION_MENU_STYLE = {
     "container": {"padding": "5!important", "background-color": "black"},
     "icon": {"color": "white", "font-size": "23px"},
@@ -36,3 +38,5 @@ QUERY_FIELDS = {
 SYMBOLS = ["MSFT", "GOOG", "TSLA", "AMZN", "FB", "^GSPC"]
 
 COLUMNS_CHART = ["time", "low", "high", "close", "open", "volume"]
+
+DATA_PATH = os.path.abspath(__file__ + "/../../data")

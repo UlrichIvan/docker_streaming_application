@@ -1,9 +1,11 @@
+import json
+import os
 import streamlit as st
 import pymongo
 import pandas as pd
 import plotly.graph_objects as go
 
-from utils.tools import COLUMNS_CHART, QUERY_FIELDS, SYMBOLS
+from utils.tools import COLUMNS_CHART, DATA_PATH, QUERY_FIELDS, SYMBOLS
 
 
 # Initialize connection with mongodb
@@ -20,6 +22,17 @@ def get_data_from_ticker(ticker, stocks):
             stock_found = stock["data"]
             break
     return stock_found
+
+
+# get static stocks in data folder from specific label after 1 min
+@st.cache_data(ttl=60)
+def get_static_data_from_symbol(symbol="MSFT"):
+    path = os.path.abspath(f"{DATA_PATH}/{symbol.upper()}.json")
+    if os.path.exists(path) == True:
+        with open(os.path.abspath(path)) as file:
+            data = json.load(file)
+        return data
+    return []
 
 
 # get stocks in streaming mongo database after 1 min
