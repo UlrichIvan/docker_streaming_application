@@ -52,7 +52,7 @@ Thanks.
 
 # for deployment
 
-go to the frontend folder and do theses steps:
+go to the `frontend` folder and do theses steps:
 
 1. Create the virtual `environment` for your project using command below:
 
@@ -72,11 +72,11 @@ go to the frontend folder and do theses steps:
 3. run application with this command below:
 
    ```cmd
-      $streamlit run main.py
+      $ streamlit run main.py
    ```
 
    if you have error use this command below for python3.12(use your python version to run script below):
 
    ```cmd
-     $  python3.12 -m streamlit run main.py
+     $ python3.12 -m streamlit run main.py
    ```
