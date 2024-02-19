@@ -78,5 +78,5 @@ go to the `frontend` folder and do theses steps:
    if you have error use this command below for python3.12(use your python version to run script below):
 
    ```cmd
-     $ python3.12 -m streamlit run main.py
+      $ python3.12 -m streamlit run main.py
    ```
