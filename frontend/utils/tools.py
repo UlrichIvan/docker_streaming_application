@@ -35,7 +35,7 @@ QUERY_FIELDS = {
     "_id": 0,
 }
 
-SYMBOLS = ["MSFT", "GOOG", "TSLA", "AMZN", "FB", "^GSPC"]
+SYMBOLS = ["MSFT", "GOOG", "TSLA", "AMZN"]
 
 COLUMNS_CHART = ["time", "low", "high", "close", "open", "volume"]
 
