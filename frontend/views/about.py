@@ -11,3 +11,9 @@ def app():
     * **Credit:** ---.
     """
     )
+
+    st.markdown(
+        """
+    ## M&M Dashboard For Traders is a web application designed for empowering your trading game by leveraging data visualization, fundamental and technical analysis but also discover the real time insights behind your data.
+    """
+    )
