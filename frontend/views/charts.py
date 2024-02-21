@@ -5,6 +5,8 @@ import plotly.express as px
 import base64
 import matplotlib.pyplot as plt
 
+from utils.tools import ROOT_PATH
+
 # ---------------------------------#
 # Page layout
 # Page expands to full width
@@ -50,7 +52,7 @@ def app():
         from alpha_vantage.fundamentaldata import FundamentalData
 
         with fundamental_data:
-            API_key = open("Clé_API.txt").read()
+            API_key = open(f"{ROOT_PATH}/API_KEY.txt").read()
             fd = FundamentalData(key=API_key, output_format="pandas")
             st.subheader("Balance Sheet")
             balance_sheet = fd.get_balance_sheet_annual(ticker)[0]
