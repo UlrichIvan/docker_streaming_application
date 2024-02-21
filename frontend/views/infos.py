@@ -1,9 +1,10 @@
 import streamlit as st
 from PIL import Image
+from utils.tools import PUBLIC_PATH
 
 
 def app():
-    image = Image.open("./public/business.png")
+    image = Image.open(f"{PUBLIC_PATH}/business.png")
 
     st.image(image, width=250)
 

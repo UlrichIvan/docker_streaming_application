@@ -15,7 +15,6 @@ OPTION_MENU_STYLE = {
 
 OPTION_MENU_ICONS = [
     "house-fill",
-    # "chat-fill",
     "person-circle",
     "trophy-fill",
     "chat-fill",
@@ -40,3 +39,5 @@ SYMBOLS = ["MSFT", "GOOG", "TSLA", "AMZN"]
 COLUMNS_CHART = ["time", "low", "high", "close", "open", "volume"]
 
 DATA_PATH = os.path.abspath(__file__ + "/../../data")
+
+PUBLIC_PATH = os.path.abspath(__file__ + "/../../public")
