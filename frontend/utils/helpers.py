@@ -15,13 +15,13 @@ from utils.tools import COLUMNS_CHART, DATA_PATH, QUERY_FIELDS, SYMBOLS
 #     return pymongo.MongoClient(**st.secrets["mongo"])
 
 
-def get_data_from_ticker(ticker, stocks):
-    stock_found = []
-    for stock in stocks:
-        if stock["_id"] == ticker:
-            stock_found = stock["data"]
-            break
-    return stock_found
+# def get_data_from_ticker(ticker, stocks):
+#     stock_found = []
+#     for stock in stocks:
+#         if stock["_id"] == ticker:
+#             stock_found = stock["data"]
+#             break
+#     return stock_found
 
 
 # get static stocks in data folder from specific label after 1 min
