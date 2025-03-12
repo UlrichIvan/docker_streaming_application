@@ -38,8 +38,11 @@ SYMBOLS = ["MSFT", "GOOG", "TSLA", "AMZN"]
 
 COLUMNS_CHART = ["time", "low", "high", "close", "open", "volume"]
 
+
 ROOT_PATH = os.path.abspath(__file__ + "/../..")
 
 DATA_PATH = f"{ROOT_PATH}/data"
 
 PUBLIC_PATH = f"{ROOT_PATH}/public"
+
+DATA_PATH = os.path.abspath(__file__ + "/../../data")

@@ -35,6 +35,17 @@ def get_static_data_from_symbol(symbol="MSFT"):
     return []
 
 
+# get static stocks in data folder from specific label after 1 min
+@st.cache_data(ttl=60)
+def get_static_data_from_symbol(symbol="MSFT"):
+    path = os.path.abspath(f"{DATA_PATH}/{symbol.upper()}.json")
+    if os.path.exists(path) == True:
+        with open(os.path.abspath(path)) as file:
+            data = json.load(file)
+        return data
+    return []
+
+
 # get stocks in streaming mongo database after 1 min
 # @st.cache_data(ttl=60)
 # def get_stocks(_client):
